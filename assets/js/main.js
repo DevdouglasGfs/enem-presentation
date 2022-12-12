@@ -11,7 +11,7 @@ function darkmode(e){
         paragraphy.classList.toggle("essay__desc_darkmode");
     })
     lists.forEach(list => {
-        list.classList.toggle(".essay__list_darkmode");
+        list.classList.toggle("essay__list_darkmode");
     })
 }
 const darkmodebtn = document.querySelector("#darkmode-btn");
