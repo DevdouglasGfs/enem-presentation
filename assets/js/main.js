@@ -15,11 +15,4 @@ function darkmode(e){
     })
 }
 const darkmodebtn = document.querySelector("#darkmode-btn");
-
-function showDarkModeBtn(e){
-    
-}
-
-const body = document.querySelector("body");
-body.addEventListener('scroll', showDarkModeBtn);
 darkmodebtn.addEventListener('click', darkmode);
