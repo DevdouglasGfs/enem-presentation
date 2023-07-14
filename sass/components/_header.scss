@@ -1,0 +1,39 @@
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 10vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    z-index: 900;
+
+    &.filled {
+        animation-name: translate-of-top;
+        animation-duration: 1s;
+        animation-timing-function: ease-out;
+        background: #F8F8F8;
+        box-shadow: 0px 0px 8px 0px rgba(9, 163, 184, 0.20);
+    }
+
+    & h1 {
+        color: $c-primary_n;
+        font-size: 1rem;
+        font-weight: 900;
+
+        & span {
+            color: $c-secundary;
+        }
+    }
+}
+
+@keyframes translate-of-top {
+    from{
+        top: -3rem;
+    }
+    to{
+        top: 0;
+        background-color: $c-white;
+    }
+}
