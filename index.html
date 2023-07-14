@@ -1,217 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="author" content="Douglas Silva">
+    <meta name="description" content="Site para apresentação de um trabalho sobre o ENEM por uma turma da Escola Estadul Professora Ayna Tôrres">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="shortcut icon" href="./imgs/logo-512.png" type="image/x-icon">
-    <title>Trabalho do ENEM</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./images/favicon/logo-512.png" type="image/x-icon">
+    <title>Apresentação do ENEM</title>
 </head>
-
 <body>
-    <header class="header-g">
-        <h1 class="header-g__title">Trabalho do ENEM</h1>
+    <header class="header">
+        <h1 class="header__title">Apresentação do <span>ENEM</span></h1>
     </header>
-
     <main>
-        <section class="intro">
-            <div class="banner">
-                <div class="banner__wrap-image">
-                    <img src="./imgs/Enem.png" alt="Imagem de banner" class="banner__image">
+        <div class="hero-unit">
+            <div class="slider">
+                <div class="slide"><img src="/assets/images/hero-unit/students-1x.png" alt=""></div>
+                <div class="slide"><img src="/assets/images/hero-unit/studing-1x.png" alt=""></div>
+                <div class="slider__placeholder">
+                    <img src="/assets/images/svg/enem.svg" alt="Logo do ENEM - Exame nacional do ensino médio">
                 </div>
             </div>
-
-            <section class="table-contents">
-                <h2 class="table-contents__title">Tabela de conteúdos</h2>
-                <ol class="table-contents__list">
-                    <li class="table-contents__content">
-                        <a href="#essay" class="table-contents__link">
-                            Redação
-                        </a>
-                    </li>
-                    <ol class="table-contents__sublist">
-                        <li class="table-contents__content">
-                            <a href="#top-topics" class="table-contents__link">
-                                Temas que mais caem
-                            </a>
-                        </li>
-                        <li class="table-contents__content">
-                            <a href="#how-make" class="table-contents__link">
-                                Como fazer uma boa redação
-                            </a>
-                        </li>
-                    </ol>
-                    <li class="table-contents__content">
-                        <a href="#references" class="table-contents__link">
-                            Referências
-                        </a>
-                    </li>
-                </ol>
-            </section>
+        </div>
+        <section class="container" id="topics">
+            <div class="contain__logo">
+                <img src="/assets/images/logos/enem-logo-info.png">
+                <div class="group-info">
+                    <h2 class="title">Tópicos</h2>
+                    <div class="contain-list">
+                        <ol class="list">
+                            <li><a href="#team">Membros</a></li>
+                            <li><a href="#essay">Redação</a></li>
+                            <ol>
+                                <li>Temas que mais caem</li>
+                                <li>Como fazer uma boa redação</li>
+                            </ol>
+                            <li><a href="#references">Referências</a></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
         </section>
-        <div class="contents">
-            <article class="essay" id="essay">
-                <header class="essay__header">
-                    <h2 class="essay__title">Redação</h2>
-                </header>
-                <span class="essay__subtitle-m">Membros</span>
-                <ul class="essay__list-members">
-                    <li class="essay__member">Douglas</li>
-                    <li class="essay__member">Fábio</li>
-                    <li class="essay__member">Yuri</li>
-                    <li class="essay__member">Marcelo</li>
-                    <li class="essay__member">Leandro</li>
-                </ul>
-    
-                <section id="top-topics">
-                    <h2 class="essay__subtitle">Quais temas mais caem na redação do Enem?</h2>
-                    <p class="essay__desc">
-                        O tema da redação é mantido em sigilo até a hora da prova.
-                        Isso é feito para garantir que todos os candidatos tenham a mesma oportunidade de desenvolver a
-                        dissertação.<br>
-                        Nas últimas edições, veja quais foram os assuntos centrais:
-                    </p>
-                    <ul class="essay__list">
-                        <li><b>2021</b>: Invisibilidade e registro civil: garantia de acesso à cidadania no Brasil </li>
-                        <li><b>2020</b>: O estigma associado às doenças mentais na sociedade brasileira</li>
-                        <li><b>2019</b>: Democratização do acesso ao cinema no Brasil</li>
-                        <li><b>2018</b>: Manipulação do comportamento do usuário pelo controle de dados na internet</li>
-                        <li><b>2017</b>: Desafios para a formação educacional de surdos no Brasil</li>
-                        <li><b>2016</b>: Caminhos para combater a intolerância religiosa no Brasil.</li>
-                        <li><b>2017</b>: A persistência da violência contra a mulher no Brasil</li>
-                        <li><b>2016</b>: Publicidade infantil em questão no Brasil</li>
-                        <li><b>2015</b>: Efeitos da implantação da Lei Seca no Brasil</li>
-                        <li><b>2012</b>: O movimento imigratório para o Brasil no século XXI</li>
-                        <li><b>2011</b>: Viver em rede no século XXI: os limites entre o público e o privado</li>
-                        <li><b>2010</b>: O trabalho na construção da dignidade humana</li>
-                        <li><b>2009</b>: O indivíduo frente à ética nacional</li>
-                        <li><b>2008</b>: A máquina de chuva da Amazônia</li>
-                        <li><b>2007</b>: O desafio de se conviver com a diferença</li>
-                        <li><b>2006</b>: O poder de transformação da leitura</li>
-                        <li><b>2005</b>: O trabalho infantil na realidade brasileira</li>
-                        <li><b>2004</b>: Como garantir a liberdade de informação e evitar abusos nos meios de
-                            comunicação
-                        </li>
-                        <li><b>2003</b>: A violência na sociedade brasileira: como mudar as regras desse jogo?</li>
-                        <li><b>2002</b>: O direito de votar: como fazer dessa conquista um meio para promover as
-                            transformações sociais de que o Brasil necessita?</li>
-                        <li><b>2001</b>: Desenvolvimento e preservação ambiental: como conciliar interesses em conflito?
-                        </li>
-                        <li><b>2000</b>: Direitos da criança e do adolescente: como enfrentar esse desafio nacional</li>
-                        <li><b>1999</b>: Cidadania e participação social</li>
-                        <li><b>1998</b>: Viver e Aprender</li>
-                    </ul>
-                </section>
-    
-                <section id="how-make">
-                    <h3 class="essay__title">Como fazer uma boa redação</h3>
-    
-                    <h4 class="essay__subtitle">Procure ler bastante</h4>
-                    <p class="essay__desc">
-                        O exercício da leitura ajuda a aprimorar a escrita, uma vez que a prática contribui com o
-                        conhecimento sobre regras de pontuação e amplia o vocabulário.
-                    </p>
-    
-                    <h4 class="essay__subtitle">Treine a escrita</h4>
-                    <p class="essay__desc">
-                        Defina temas de seu interesse e, a partir disso, desenvolva textos dissertativos.
-                    </p>
-                    <p class="essay__desc">
-                        Também vale treinar, escrevendo cartas e mensagens para seus amigos e familiares.
-                    </p>
-    
-                    <h4 class="essay__subtitle">Revise sempre</h4>
-                    <p class="essay__desc">
-                        Somente com a revisão, é possível corrigir eventuais erros gramaticais.
-                    </p>
-                    <p class="essay__desc">
-                        Além disso, rever o texto pode dar outra visão acerca da ideia apresentada.
-                    </p>
-    
-                    <h4 class="essay__subtitle">Mantenha-se atualizado</h4>
-                    <p class="essay__desc">Como as redações do Enem normalmente são definidas a partir de temas atuais,
-                        manter-se atualizado sobre o que vem acontecendo no Brasil e no mundo é fundamental.</p>
-                </section>
-    
-                <section id="biggest-mistakes">
-                    <h2 class="essay__title">Os 10 maiores erros de redação cometidos</h2>
-
-
-                    <h3 class="essay__subtitle">1. Fugir do tema</h3>
-                    <p class="essay__desc">O maior problema, e que pode levar a uma nota muito baixa ou mesmo o
-                        cancelamento da prova, é a fuga total ou tangenciamento ao tema.</p>
-    
-                    <h3 class="essay__subtitle">2. Não fazer um rascunho</h3>
-                    <p class="essay__desc">Um dos problemas de rasuras nas provas de redação pode ser desencadeado pelo
-                        estudante que opta em escrever diretamente na folha final.</p>
-    
-                    <h3 class="essay__subtitle">3. Entregar o texto com letra ilegível</h3>
-                    <p class="essay__desc">Não adianta ter uma ideia boa e apresentar um bom texto se a letra do
-                        estudante é ilegível para o avaliador. Para muitos, isso pode não ser importante, mas é
-                        essencial para que o leitor do texto compreenda o que está sendo apresentado. Assim, se sua
-                        letra não é das melhores, tente nesse momento ter muito cuidado.</p>
-    
-                    <h3 class="essay__subtitle">4. Faltar com a coesão textual</h3>
-                    <p class="essay__desc">Um dos principais problemas encontrados nos textos é a falta de coesão
-                        textual que serve para obter um bom encadeamento das ideias, das frases e dos parágrafos.</p>
-    
-                    <h3 class="essay__subtitle">5. Ser incoerente</h3>
-                    <p class="essay__desc">A coerência é uma das características mais importantes de um texto bem
-                        apresentado. Ela está intimamente relacionada com o contexto e o universo interpretativo da
-                        pessoa, uma vez que trabalha com a construção do sentido.</p>
-    
-                    <h3 class="essay__subtitle">6. Cometer erros de português</h3>
-                    <p class="essay__desc">Uma das principais competências dos estudantes que escrevem um texto deve ser
-                        o uso da língua padrão formal. Com isso, deve-se evitar desvios gramaticais, erros ortográficos,
-                        falta de acentuação e pontuação.</p>
-    
-                    <h3 class="essay__subtitle">7. Escrever períodos muito longos</h3>
-                    <p class="essay__desc">Um dos grandes problemas dos estudantes é não ter cuidado com a pontuação nas
-                        frases. Períodos muito longos, por exemplo, dificultam o entendimento do leitor e até mesmo
-                        geram confusões.</p>
-    
-                    <h3 class="essay__subtitle">8. Usar linguagem informal</h3>
-                    <p class="essay__desc">O uso da linguagem informal ou coloquial é um erro muito grande que o
-                        candidato deve evitar. Como exemplo, podemos citar o uso de gírias e de expressões populares no
-                        meio do texto. Esse recurso só deverá ser utilizado se o foco for esse mesmo.</p>
-    
-                    <h3 class="essay__subtitle">9. Empregar frases ambíguas</h3>
-                    <p class="essay__desc">A ambiguidade é um problema recorrente nas redações e que surge por descuido
-                        de muitos estudantes. Trata-se de uma duplicação de sentidos a qual reúne mais de uma
-                        interpretação. Portanto, ela torna o texto confuso e dificulta o entendimento do leitor.</p>
-    
-                    <h3 class="essay__subtitle">10. Entregar outro tipo de texto</h3>
-                    <p class="essay__desc">A tipologia textual é de suma importância para o desenvolvimento correto da
-                        proposta de redação. Assim, entenda primeiro qual o tipo de texto que deverá ser produzido:
-                        narrativo, descrito, dissertativo, carta, etc.</p>
-                </section>
-    
-            </article>
-        </div>
-        
     </main>
-    <footer class="footer-g">
-        <p class="footer-g__copyright">
-            &copy; Feito por <a href="https://www.facebook.com/devdouglassilva/" class="footer-g__social-link">Douglas
-                Silva</a> para fins educacionais
-        </p>
+
+
+    <footer>
+        <p>Desenvolvido por <a href="#">Douglas Silva</a></p>
     </footer>
-    <div class="controls-page">
-        <div class="controls-page__control">
-            <a id="darkmode-btn">
-                <span class="icon material-symbols-outlined">
-                    dark_mode
-                </span>
-            </a>
-        </div>
-    </div>
+    <nav class="navbar">
+        <ul class="navbar__list">
+            <li><a href="#topics"><span class="material-symbols-outlined">article</span></a></li>
+            <li><a href="#team"><span class="material-symbols-outlined">groups</span></a></li>
+            <li><a href="#references"><span class="material-symbols-outlined">quick_reference_all</span></a></li>
+        </ul>
+    </nav>
     <script src="./assets/js/main.js"></script>
 </body>
-
 </html>

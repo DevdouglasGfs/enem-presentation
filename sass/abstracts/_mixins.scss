@@ -1,0 +1,77 @@
+@mixin convert-to-rem($property, $size) {
+    #{$property}: ($value / 16) + rem;
+}
+
+@mixin manage-state-cta($state, $background: null, $color: null) {
+    @if($state =='default') {
+        @if($background or $color) {
+            @if($background and $color) {
+                color: $color;
+                background: $background;
+            }
+
+            @else if($background and not $color) {
+                background: $background;
+                color: $c-primary_n_active;
+            }
+
+            @else if($color and not $background) {
+                color: $color;
+                background: $c-primary_l;
+            }
+        }
+
+        @else {
+            background: $c-primary_l;
+            color: $c-primary_n;
+        }
+    }
+
+    @else if($state =='active') {
+        @if($background or $color) {
+            @if($background and $color) {
+                color: $color;
+                background: $background;
+            }
+
+            @else if($background and not $color) {
+                background: $background;
+                color: $c-primary_n_active;
+            }
+
+            @else if($color and not $background) {
+                color: $color;
+                background: $c-primary_l;
+            }
+        }
+
+        @else {
+            background: $c-primary_n_active;
+            color: $c-primary_l;
+        }
+    }
+
+    @if($state =='hover') {
+        @if($background or $color) {
+            @if($background and $color) {
+                color: $color;
+                background: $background;
+            }
+
+            @else if($background and not $color) {
+                background: $background;
+                color: $c-primary_n_active;
+            }
+
+            @else if($color and not $background) {
+                color: $color;
+                background: $c-primary_l;
+            }
+        }
+
+        @else {
+            background: $c-primary_n_hover;
+            color: $c-primary_l;
+        }
+    }
+}
