@@ -2,11 +2,11 @@
 /*=====================================*/
 /*=========== Pallete Color ===========*/
 /*=====================================*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /*===== Tipography font size =====*/
 /*================================*/
 /*=====    Path of images    =====*/
 /*================================*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -441,8 +441,7 @@ template {
   display: block;
   object-fit: cover;
   height: 100%;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
 .slider .slide::before {
@@ -466,9 +465,78 @@ template {
 .container {
   min-height: 100vh;
 }
-.container#topics {
+.container#topics, .container#team {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.container#topics .contain__logo img {
+  display: block;
+  margin: 0 auto;
+}
+.container#topics .contain__logo .group-info .title {
+  text-align: center;
+}
+.container#team {
+  background: linear-gradient(180deg, #044884 0%, #022B4F 100%);
+}
+.container#team .title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #B1C6D9;
+  text-decoration: underline;
+}
+.container#team .team-list {
+  margin: 2rem 0;
+  padding: 0;
+  list-style: none;
+}
+.container#team .team-list li {
+  margin-bottom: 0.5rem;
+}
+.container#team .team-list li a {
+  text-decoration: none;
+  color: #B1C6D9;
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 400;
+}
+.container#team .team-list li a:hover {
+  text-decoration: underline;
+}
+.container#team .label {
+  text-align: center;
+  color: #D9E4ED;
+}
+
+.contain-list .list {
+  margin: 0;
+  padding: 0;
+  font-weight: 700;
+}
+.contain-list .list li {
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
+}
+.contain-list .list li a {
+  text-decoration: none;
+  color: inherit;
+}
+.contain-list .list li a:hover {
+  text-decoration: underline;
+  color: #044177;
+}
+.contain-list .list li a:active {
+  text-decoration: underline;
+  color: #033A6A;
+}
+.contain-list .list .sublist {
+  margin: 1rem 0;
+}
+.contain-list .list .sublist li {
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  font-size: 16px;
+}/*# sourceMappingURL=style.css.map */
